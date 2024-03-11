@@ -115,16 +115,7 @@ const Footer = ({ hideBGCOLOR }) => {
                 <a href="#0">
                   <i className="fab fa-youtube"></i>
                 </a>
-              </div>
-              <div className="copy-right">
-                <p>
-                  © 2022, Vie Template. Made with passion by
-                  <Link to="https://themeforest.net/user/themescamp/portfolio" target="_blank">
-                    ThemesCamp
-                  </Link>
-                  .
-                </p>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
