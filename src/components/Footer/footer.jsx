@@ -17,21 +17,30 @@ const Footer = ({ hideBGCOLOR }) => {
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
                     <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
+                    <p>75, Jalan Templer,
+                       Section 6,<br></br> Petaling Jaya, 
+                       46000 <br></br>Selangor, Malaysia.
+                    </p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
                     <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
+                    <p>info@firstambulance.com.my</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Call Us</h6>
-                    <p>+87986451666</p>
+                    <Link to="tel:1300881919">
+                     <p>1300 88 1919</p>
+                    </Link>
+                    <h6>IDD</h6>
+                    <Link to="tel:+60377851919" >
+                     <p>+603 7785 1919</p>
+                    </Link>
                   </div>
                 </li>
               </ul>

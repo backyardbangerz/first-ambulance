@@ -11,7 +11,7 @@ const Blogs1 = () => {
               <h6 className="wow fadeIn" data-wow-delay=".5s">
                 RECENT ARTICLES
               </h6>
-              <h3 className="wow color-font">From our blogs.</h3>
+              <h3 className="wow color-font">From our press.</h3>
             </div>
           </div>
         </div>

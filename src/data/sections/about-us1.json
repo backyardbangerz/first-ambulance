@@ -2,10 +2,10 @@
   "id": 1,
   "smallTitle": "About Us",
   "title": "Our Comapny",
-  "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+  "content": "First Ambulance is a highly regarded emergency medical services provider based in Malaysia. With an outstanding track record of over two decades, we have proudly served our local community, strictly following best practices and industry standards. Our extensive fleet and expertise allow us to offer comprehensive turnkey solutions for both private and public services. With operational hubs strategically located throughout the country, we efficiently handle the workload necessary to support our nation’s healthcare needs.",
   "image": "/img/feat.jpg",
   "stauts": [
-    { "id": 1, "number": "3", "letter": "K", "stautsName": "Happy Clients" },
-    { "id": 2, "number": "14", "letter": "K", "stautsName": "Success Projects" }
+    { "id": 1, "number": "3", "letter": "K", "stautsName": "Patients Saved" },
+    { "id": 2, "number": "14", "letter": "K", "stautsName": "Round Trips" }
   ]
 }

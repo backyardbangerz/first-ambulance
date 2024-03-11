@@ -1,9 +1,8 @@
 import React from "react";
 import Navbar from "components/Navbar/navbar";
 import IntroWithSlider from "components/Intro-with-slider/intro-with-slider";
-import AboutUs from "components/About-us/about-us";
-import Services from "components/Services/services";
-import Works from "components/Works/works";
+import AboutUs2 from "components/About-us2/about-us2";
+import Services6 from "components/Services6/services6";
 import Numbers from "components/Numbers/numbers";
 import VideoWithTestimonials from "components/Video-with-testimonials/video-with-testimonials";
 import SkillsCircle from "components/Skills-circle/skills-circle";
@@ -50,9 +49,8 @@ const Homepage1 = () => {
       <Navbar nr={navbarRef} lr={logoRef} />
       <IntroWithSlider sliderRef={fixedSlider} />
       <div ref={MainContent} className="main-content">
-        <AboutUs />
-        <Services />
-        <Works />
+        <AboutUs2 />
+        <Services6 />
         <Numbers />
         <VideoWithTestimonials />
         <SkillsCircle theme="dark" />
@@ -68,7 +66,7 @@ const Homepage1 = () => {
 export const Head = () => {
   return (
     <>
-      <title>Vie - Home 1 Dark</title>
+      <title>First Ambulance - Malaysia's Largest Private Abulance Firm</title>
     </>
   )
 }
