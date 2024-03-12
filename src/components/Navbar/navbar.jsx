@@ -67,7 +67,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 <Link to={`/showcase/showcase-dark`} className="dropdown-item">
                   Showcase Parallax
                 </Link>
-                <Link to={`/showcase4/showcase4-dark`} className="dropdown-item">
+                <Link to={``} className="dropdown-item">
                   Showcase Carousel
                 </Link>
               </div>
