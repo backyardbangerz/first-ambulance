@@ -86,7 +86,7 @@ const ShowcasesFullScreen = () => {
                           <div className="col-lg-12">
                             <div className="caption">
                               <h1>
-                                <Link to={`/project-details2/project-details2-dark`}>
+                                <Link to={slide.customLink}>
                                   <div className="stroke" data-swiper-parallax="-2000">
                                     {slide.title.first}
                                   </div>
@@ -97,7 +97,7 @@ const ShowcasesFullScreen = () => {
                                 <div className="bord"></div>
                               </h1>
                               <div className="discover">
-                                <Link to={`/works/works-dark`}>
+                                <Link to={slide.exploreMoreLink}>
                                   <span>
                                     Explore <br /> More
                                   </span>

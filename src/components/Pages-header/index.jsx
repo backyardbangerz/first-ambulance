@@ -8,14 +8,13 @@ const PagesHeader = () => {
           <div className="col-lg-10">
             <div className="cont mt-100 mb-50 text-center">
               <h1 className="color-font fw-700">
-                Our dedicated team of creatives is bursting with talent,
-                experience and passion for what we do.
+                Welcome to the Future of Ambulance Services.
               </h1>
             </div>
           </div>
           <div className="col-lg-10">
             <div className="img">
-              <img src="/img/slid/about.jpg" alt="" />
+              <img src="/img/slid/about2.jpg" alt="" />
             </div>
           </div>
         </div>

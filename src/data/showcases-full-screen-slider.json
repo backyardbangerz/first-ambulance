@@ -1,26 +1,50 @@
 [
     {
         "id": 1,
-        "title": {"first": "Midnight", "second": "Snack"},
-        "image": "/img/portfolio/full/1.jpg",
-        "sub": "Design"
+        "title": {"first": "Team Wellbeing", "second": "Initiatives"},
+        "image": "/img/portfolio/full/001.jpg",
+        "sub": "Design",
+        "customLink": "/about/about-dark",
+        "exploreMoreLink": "/project-details2/project-details2-dark"
     },
     {
       "id": 2,
-      "title": { "first": "Fisherman", "second": "Portrait" },
-      "image": "/img/portfolio/full/2.jpg",
-      "sub": "Design"
+      "title": { "first": "Community Impact", "second": "Programs" },
+      "image": "/img/portfolio/full/002.jpg",
+      "sub": "Design",
+      "customLink": "/about/about-dark",
+      "exploreMoreLink": "/project-details2/project-details2-dark"
     },
     {
       "id": 3,
-      "title": { "first": "Tribos", "second": "Urbanas" },
-      "image": "/img/portfolio/full/3.jpg",
-      "sub": "Design"
+      "title": { "first": "Making Vehicles", "second": "Speacial" },
+      "image": "/img/portfolio/full/003.jpg",
+      "sub": "Design",
+      "customLink": "/about/about-dark",
+      "exploreMoreLink": "/project-details2/project-details2-dark"
     },
     {
       "id": 4,
-      "title": { "first": "Monsoon", "second": "in the city" },
-      "image": "/img/portfolio/full/4.jpg",
-      "sub": "Design"
+      "title": { "first": "Nexus", "second": "Operation Centre" },
+      "image": "/img/portfolio/full/004.jpg",
+      "sub": "Design",
+      "customLink": "/about/about-dark",
+      "exploreMoreLink": "/project-details2/project-details2-dark"
+    },
+    {
+      "id": 5,
+      "title": { "first": "Intergrated Turnkey", "second": "Innovations" },
+      "image": "/img/portfolio/full/005.jpg",
+      "sub": "Design",
+      "customLink": "/about/about-dark",
+      "exploreMoreLink": "/project-details2/project-details2-dark"
+    },
+    {
+      "id": 6,
+      "title": { "first": "Eco-Focused", "second": "Initiatives" },
+      "image": "/img/portfolio/full/006.jpg",
+      "sub": "Design",
+      "customLink": "/about/about-dark",
+      "exploreMoreLink": "/project-details2/project-details2-dark"
     }
 ]

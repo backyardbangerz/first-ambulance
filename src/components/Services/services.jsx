@@ -13,10 +13,10 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Best Features
+                
               </h6>
               <h3 className="wow color-font">
-                We are a new digital product development agency
+              Going the extra mile to save lives!
               </h3>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Services = ({ style, lines }) => {
                       : "1.1"
                   }s`}
                 >
-                  <div className="item-box">
+                  <div className="item-box" style={{ height: "90%" }}>
                     <div>
                       <span className={`icon ${feature.icon}`}></span>
                     </div>

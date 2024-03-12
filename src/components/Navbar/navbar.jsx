@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import appData from "data/app.json";
-import { handleMobileDropdown } from "common/navbar";
+import { handleDropdown, handleMobileDropdown } from "common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
   return (
@@ -12,18 +12,17 @@ const Navbar = ({ lr, nr, theme }) => {
       }`}
     >
       <div className="container">
-      <Link to="/" className="logo">
-  {theme ? (
-    theme === "themeL" ? (
-      <img ref={lr} src={appData.darkLogo} alt="logo" style={{ width: "120px", height: "auto" }} />
-    ) : (
-      <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "120px", height: "auto" }} />
-    )
-  ) : (
-    <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "120px", height: "auto" }} />
-  )}
-</Link>
-
+        <Link to="/" className="logo">
+          {theme ? (
+            theme === "themeL" ? (
+              <img ref={lr} src={appData.darkLogo} alt="logo" />
+            ) : (
+              <img ref={lr} src={appData.lightLogo} alt="logo" />
+            )
+          ) : (
+            <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "120px", height: "auto" }} />
+          )}
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -52,6 +51,26 @@ const Navbar = ({ lr, nr, theme }) => {
               <Link to={`/about/about-dark`} className="nav-link">
                 About
               </Link>
+            </li>
+
+            <li className="nav-item dropdown" onClick={handleDropdown}>
+              <span
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Works
+              </span>
+              <div className="dropdown-menu">
+                <Link to={`/showcase/showcase-dark`} className="dropdown-item">
+                  Showcase Parallax
+                </Link>
+                <Link to={`/showcase4/showcase4-dark`} className="dropdown-item">
+                  Showcase Carousel
+                </Link>
+              </div>
             </li>
             
             <li className="nav-item">

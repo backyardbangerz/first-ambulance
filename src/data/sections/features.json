@@ -2,25 +2,25 @@
     {
         "id": 1,
         "icon": "pe-7s-paint-bucket",
-        "title": "Graphic Design",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+        "title": "EXPERIENCE",
+        "content": "First Ambulance has been in operations since 1999. Serving the largest private hospitals throughout Malaysia. The founding team members actively manage the business and bring with them a collective experience of 60 years of private ambulance operations."
     },
     {
         "id": 2,
         "icon": "pe-7s-phone",
-        "title": "Web & Mobile Design",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit."
+        "title": "REPUTATION",
+        "content": "Sole provider of ambulances for leading Malaysian Top Tier hospitals , Cardiac Centres, On shore Oil & Gas Projects and official private ambulance partner for large scale events."
     },
     {
         "id": 3,
         "icon": "pe-7s-display1",
-        "title": "Social Media Marketing",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit."
+        "title": "TEAM",
+        "content": "We deliver trained doctors and licensed paramedics who are available 24/7 on site with medical direction by our company Chief Medical Officer. All our paramedics are Advanced Cardiac Life Support trained and we are certified by the ISO 9001 Standard."
     },
     {
         "id": 4,
         "icon": "pe-7s-diskette",
-        "title": "Document Legal Policy",
-        "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+        "title": "RESPONSE TIME",
+        "content": "Immediate response time for ambulances and trained personnel stationed in hospitals. For on site retainer model our private ambulances respond in 17 minutes for distances within 20km radius."
     }
 ]
