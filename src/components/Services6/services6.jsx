@@ -8,7 +8,7 @@ const Services6 = () => {
         <div className="row justify-content-center">
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s2.jpg)", display: 'flex', flexDirection: 'column'}}
+            style={{ backgroundImage: "url(/img/arch/pexels1.jpg)", display: 'flex', flexDirection: 'column'}}
           >
             <h6 className="numb">01</h6>
             <h5>Team Wellbeing Initiatives</h5>
@@ -24,7 +24,7 @@ const Services6 = () => {
 
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s1.jpg)", display: 'flex', flexDirection: 'column' }}
+            style={{ backgroundImage: "url(/img/arch/pexels2.jpg)", display: 'flex', flexDirection: 'column' }}
           >
             <h6 className="numb">02</h6>
             <h5>Community Impact Program</h5>
@@ -40,7 +40,7 @@ const Services6 = () => {
 
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s3.jpg)", display: 'flex', flexDirection: 'column' }}
+            style={{ backgroundImage: "url(/img/arch/pexels3.jpg)", display: 'flex', flexDirection: 'column' }}
           >
             <h6 className="numb">03</h6>
             <h5>Making Vehicles Special</h5>
@@ -56,7 +56,7 @@ const Services6 = () => {
 
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s4.jpg)", display: 'flex', flexDirection: 'column' }}
+            style={{ backgroundImage: "url(/img/arch/pexels4.jpg)", display: 'flex', flexDirection: 'column' }}
           >
             <h6 className="numb">04</h6>
             <h5>Nexus Operation Centre</h5>
@@ -72,7 +72,7 @@ const Services6 = () => {
 
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s4.jpg)", display: 'flex', flexDirection: 'column' }}
+            style={{ backgroundImage: "url(/img/arch/pexels5.jpg)", display: 'flex', flexDirection: 'column' }}
           >
             <h6 className="numb">05</h6>
             <h5>Intergrated Turnkey Innovations</h5>
@@ -88,7 +88,7 @@ const Services6 = () => {
 
           <div
             className="col-lg col-md-6 item bg-img"
-            style={{ backgroundImage: "url(/img/arch/s5.jpg)", display: 'flex', flexDirection: 'column' }}
+            style={{ backgroundImage: "url(/img/arch/pexels6.jpg)", display: 'flex', flexDirection: 'column' }}
           >
             <h6 className="numb">06</h6>
             <h5>Eco-Focused Initiatives</h5>
