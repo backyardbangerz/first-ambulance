@@ -7,9 +7,8 @@ const Navbar = ({ lr, nr, theme }) => {
   return (
     <nav
       ref={nr}
-      className={`navbar navbar-expand-lg change ${
-        theme === "themeL" ? "light" : ""
-      }`}
+      className={`navbar navbar-expand-lg change ${theme === "themeL" ? "light" : ""
+        }`}
     >
       <div className="container">
         <Link to="/" className="logo">
@@ -41,19 +40,19 @@ const Navbar = ({ lr, nr, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
+            <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home
               </Link>
             </li>
-            
+
             <li className="nav-item">
               <Link to={`/about/about-dark`} className="nav-link">
                 About
               </Link>
             </li>
 
-            <li className="nav-item dropdown" onClick={handleDropdown}>
+            <li className="nav-item dropdown">
               <span
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
@@ -72,13 +71,13 @@ const Navbar = ({ lr, nr, theme }) => {
                 </Link>
               </div>
             </li>
-            
+
             <li className="nav-item">
               <Link to={`/blog/blog-dark`} className="nav-link">
                 Press
               </Link>
             </li>
-            
+
             <li className="nav-item">
               <Link to={`/contact/contact-dark`} className="nav-link">
                 Contact

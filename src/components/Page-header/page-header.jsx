@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PageHeader = ({ title, paragraph, className }) => {
+const PageHeader = ({ title, paragraph = "", className }) => {
   return (
     <section className={`page-header ${className && className}`}>
       <div className="container">
