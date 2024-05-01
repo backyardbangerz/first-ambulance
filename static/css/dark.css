@@ -1755,6 +1755,108 @@ span:hover {
 
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ new page style ] ====================== */
+.ambulance-header {
+	min-height: 530px;
+	background: url(https://www.firstambulance.com.my/wp-content/uploads/2020/06/Ambulance-services-bg-red.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 90px 50px 90px 50px;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.ambulance-header-text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-heading {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.category-vehicles-heading {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ensure-vehicles {
+	border: 1px solid #ea0029;
+	border-radius: 30px;
+	padding: 10px;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.category-vehicles {
+	width: 33.33%;
+}
+
+.category-vehicles {
+	border: 1px solid #ea0029;
+	border-radius: 30px;
+	padding: 10px;
+	margin: 10px;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.vehicles-heading {
+	margin-bottom: 40px;
+}
+
+.ambulance-list-item-row {
+	padding: 0px 80px 0px 80px;
+}
+.equipment-section {
+	padding: 80px 0 40px 0;
+}
+
+.list-item-ambulances {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 20px;
+}
+
+.rounded-md {
+	border-radius: 10px;
+}
+
+.rounded-xl {
+	border-radius: 40px;
+}
+
+.gap-4 {
+	gap: 20px;
+}
+
+.gap-6 {
+	gap: 30px;
+}
+
+.w-30 {
+	width: 30px;
+}
+
+.h-30 {
+	width: 30px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.bg-gray-400 {
+	background-color: #f6f6f6;
+}
+
+
 .display-sm {
 	font-size: 3rem;
 	font-weight: 300;
@@ -8227,6 +8329,12 @@ footer .item .copy-right p a {
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+	.ctegory-vehicle {
+		width: 33.33%;
+	}
+	.ambulance-list-item-row {
+		padding: 0px 80px 0px 80px;
+	}
 	.navbar .navbar-collapse.show-with-trans {
 		opacity: 1;
 		padding: 10px 15px;
@@ -8626,6 +8734,12 @@ footer .item .copy-right p a {
 }
 
 @media screen and (max-width: 767px) {
+	.ambulance-list-item-row {
+		padding: 0px;
+	}
+	.ctegory-vehicle {
+		width: 100%;
+	}
 	.sm-mb10 {
 		margin-bottom: 10px;
 	}
@@ -9018,6 +9132,12 @@ footer .item .copy-right p a {
 }
 
 @media screen and (max-width: 480px) {
+	.ctegory-vehicle {
+		width: 100%;
+	}
+	.ambulance-list-item-row {
+		padding: 0;
+	}
 	.hamenu .cont-info {
 		display: none;
 	}
@@ -9304,6 +9424,12 @@ section.next-prog.section-padding {
 	overflow: hidden;
 }
 @media (max-width: 768px) {
+	.ambulance-list-item-row {
+		padding: 0;
+	}
+	.ctegory-vehicle {
+		width: 100%;
+	}
 	a.col-md-3.popimg {
 		padding: 0;
 		margin-bottom: 15px;

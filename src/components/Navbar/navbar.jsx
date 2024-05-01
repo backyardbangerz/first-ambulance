@@ -52,7 +52,13 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
 
-            <li className="nav-item dropdown">
+            <li className="nav-item">
+              <Link to={`/ambulance/ambulance-dark`} className="nav-link">
+                Ambulance
+              </Link>
+            </li>
+
+            <li className="nav-item dropdown" onClick={handleDropdown}>
               <span
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
