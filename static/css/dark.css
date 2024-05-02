@@ -1755,8 +1755,12 @@ span:hover {
 
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ new page style ] ====================== */
+.cursor-pointer {
+	cursor: pointer;
+}
+
 .ambulance-header {
-	min-height: 530px;
+	min-height: 570px;
 	background: url(https://www.firstambulance.com.my/wp-content/uploads/2020/06/Ambulance-services-bg-red.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1764,7 +1768,7 @@ span:hover {
 	padding: 90px 50px 90px 50px;
 	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
-.ambulance-header-text{
+.ambulance-header-text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1777,6 +1781,9 @@ span:hover {
 	text-align: center;
 	margin-bottom: 20px;
 }
+.color-primary {
+	color: #ea0029 !important;
+}
 .ensure-vehicles {
 	border: 1px solid #ea0029;
 	border-radius: 30px;
@@ -1788,6 +1795,7 @@ span:hover {
 }
 
 .category-vehicles {
+	background: #18191d;
 	border: 1px solid #ea0029;
 	border-radius: 30px;
 	padding: 10px;
@@ -1813,6 +1821,17 @@ span:hover {
 	padding-bottom: 20px;
 }
 
+.ambulance-card-shadow {
+	box-shadow: 0px 10px 40px -4px rgba(0, 0, 0, 0.1);
+}
+
+.interior-ambulances-card-title {
+	color: #ea0029;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
 .rounded-md {
 	border-radius: 10px;
 }
@@ -1821,6 +1840,19 @@ span:hover {
 	border-radius: 40px;
 }
 
+.font-weight-bolder {
+	font-weight: 900 !important;
+}
+
+.text-43 {
+	font-size: 43px;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+}
+
+.top-0 {
+	top: 0;
+}
 .gap-4 {
 	gap: 20px;
 }
@@ -1856,7 +1888,6 @@ span:hover {
 	background-color: #f6f6f6;
 }
 
-
 .display-sm {
 	font-size: 3rem;
 	font-weight: 300;
@@ -1867,9 +1898,13 @@ span:hover {
 	padding: 80px;
 }
 
-.py-10 {
-	padding: 80px 0;
+.pb-30 {
+	padding-bottom: 30px;
 }
+.py-10 {
+	padding: 120px 0;
+}
+
 .px-10 {
 	padding: 0 80px;
 }
@@ -1935,6 +1970,30 @@ span:hover {
 	background: rgba(255, 0, 0, 0.649);
 	left: 0;
 	top: 0;
+}
+
+.accordion-item {
+	border-bottom: 1px solid #494949;
+}
+
+.accordion-top-heading {
+	letter-spacing: 2px;
+}
+
+.accordion-item-header {
+	padding: 20px 0;
+}
+
+.accordion-body {
+	padding: 15px 0;
+}
+
+.accordion-icon {
+	margin-right: 5px;
+}
+
+p.accordion-content {
+	margin-bottom: 25px;
 }
 
 /* ====================== [ Start navbar ] ====================== */

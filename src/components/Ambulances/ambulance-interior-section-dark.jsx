@@ -28,7 +28,7 @@ export default function AmbulanceInteriorSectionDark() {
 
 				<div className='mt-40'>
 					<div className="d-flex gap-4 w-100">
-						<div className="p-4 text-center rounded-md text-white category-vehicles" style={{ background: "#18191d" }}>
+						<div className="p-4 text-center rounded-md text-white category-vehicles ambulance-card-shadow">
 							<div>
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-30 h-30">
 									<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />

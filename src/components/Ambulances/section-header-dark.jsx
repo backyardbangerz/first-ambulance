@@ -21,11 +21,11 @@ export default function SectionHeaderDark() {
 					<span>IDD: : <font color="ea0029">+603 7785 1919</font> </span>
 				</a>
 			</div>
-			<section className='ambulance-header'>
-				<svg className='position-absolute top-0' fill='#f6f6f6' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
+			<section className='ambulance-header position-relative ambulance-header-text'>
+				<svg style={{ height: "14px", right: "25%" }} className='position-absolute top-0' fill='#f6f6f6' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
 					<path class="elementor-shape-fill" d="M350,10L340,0h20L350,10z"></path>
 				</svg>
-				<h2 className='text-center ambulance-header-text'>ONSITE <br /> AMBULANCE</h2>
+				<h2 className='text-center font-weight-bolder text-43'>ONSITE <br /> AMBULANCE</h2>
 			</section>
 
 		</div>
