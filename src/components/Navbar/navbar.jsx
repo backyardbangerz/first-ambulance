@@ -52,14 +52,8 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to={`/ambulance/ambulance-dark`} className="nav-link">
-                Ambulance
-              </Link>
-            </li>
-
             <li className="nav-item dropdown" onClick={handleDropdown}>
-              <span
+              <Link to="/showcase/showcase-dark"
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 role="button"
@@ -67,13 +61,13 @@ const Navbar = ({ lr, nr, theme }) => {
                 aria-expanded="false"
               >
                 Works
-              </span>
+              </Link>
               <div className="dropdown-menu">
-                <Link to={`/showcase/showcase-dark`} className="dropdown-item">
-                  Showcase Parallax
+                <Link to={"/ambulance/ambulance-dark"} className="dropdown-item">
+                  Ambulance
                 </Link>
-                <Link to={``} className="dropdown-item">
-                  Showcase Carousel
+                <Link to={`/project-details2/project-details2-dark/`} className="dropdown-item">
+                  Showcase Parallax
                 </Link>
               </div>
             </li>
