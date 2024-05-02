@@ -1755,6 +1755,9 @@ span:hover {
 
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ new page style ] ====================== */
+.py-90 {
+	padding: 90px 0;
+}
 .cursor-pointer {
 	cursor: pointer;
 }
@@ -1776,6 +1779,8 @@ span:hover {
 .section-heading {
 	text-align: center;
 	margin-bottom: 40px;
+	font-size: 20px;
+	letter-spacing: 2px;
 }
 .category-vehicles-heading {
 	text-align: center;
@@ -1805,6 +1810,13 @@ span:hover {
 
 .vehicles-heading {
 	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.8em;
+}
+
+.line-height-vehicle {
+	line-height: 1.7rem;
 }
 
 .ambulance-list-item-row {
@@ -1813,7 +1825,9 @@ span:hover {
 .equipment-section {
 	padding: 80px 0 40px 0;
 }
-
+.onsite-ambulance-text {
+	font-size: 17px;
+}
 .list-item-ambulances {
 	display: flex;
 	align-items: center;
@@ -1827,9 +1841,13 @@ span:hover {
 
 .interior-ambulances-card-title {
 	color: #ea0029;
-	font-size: 20px;
+	font-size: 23px;
 	font-weight: 600;
 	letter-spacing: 1px;
+}
+
+.font-size-18 {
+	font-size: 18px;
 }
 
 .rounded-md {
@@ -1850,9 +1868,29 @@ span:hover {
 	letter-spacing: 1px;
 }
 
+.list-style {
+	list-style: disc;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+.letter-spacing-1 {
+	letter-spacing: 1;
+}
+
+.font-weight-600 {
+	font-weight: 600;
+}
+.ml-45 {
+	margin-left: 45px;
+}
 .top-0 {
 	top: 0;
 }
+
+.gap-2 {
+	gap: 10px;
+}
+
 .gap-4 {
 	gap: 20px;
 }
@@ -1884,6 +1922,14 @@ span:hover {
 	margin-bottom: 10px;
 }
 
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-25 {
+	margin-bottom: 25px;
+}
+
 .bg-gray-400 {
 	background-color: #f6f6f6;
 }
@@ -1898,15 +1944,53 @@ span:hover {
 	padding: 80px;
 }
 
+.p-10px {
+	padding: 10px;
+}
+
 .pb-30 {
 	padding-bottom: 30px;
 }
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
 .py-10 {
 	padding: 120px 0;
 }
 
+.py-40 {
+	padding: 40px 0;
+}
+
 .px-10 {
 	padding: 0 80px;
+}
+
+.flex {
+	width: auto;
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.gap-10 {
+	gap: 10px;
 }
 
 .video-responsive {
@@ -1925,12 +2009,10 @@ span:hover {
 }
 
 .flip-card {
-	background-color: gray;
-	perspective: 1000px;
+	background-color: rgb(171, 12, 12);
 }
 
 .flip-card-inner {
-	position: relative;
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -1941,6 +2023,26 @@ span:hover {
 
 .flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
+}
+
+.bg-primary-color {
+	background-color: #ea0029;
+}
+
+.flip-box__layer__desc {
+	font-size: 14px;
+}
+
+.flip-box__layer__title {
+	color: #ea0029;
+	font-family: "Montserrat", Sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+p.accordion-item-color {
+	color: #ea0029 !important;
 }
 
 .flip-card-front,

@@ -5,7 +5,7 @@ export default function AmbulanceInteriorSectionDark() {
 		<section className='py-10'>
 			<div className="container">
 				<div className='text-center'>
-					<h2 className='text-danger'>AMBULANCE INTERIOR</h2>
+					<h2 className='color-primary font-weight-600 interior-ambulances-card-title'>AMBULANCE INTERIOR</h2>
 					<p className='mt-4'>While we are taking care of patients in our ambulance, our interior layout minimises potential injury and improves working conditions for our staff and healthcare professionals</p>
 				</div>
 
@@ -45,7 +45,7 @@ export default function AmbulanceInteriorSectionDark() {
 							</div>
 
 							<p className='pb-2 font-weight-normal text-white'>AUSTRALIAN STANDARD AS / NZS</p>
-							<p>4535:1999 Ambulance Restraint Standard for safety andn occupant protection in ambulance vehicles.</p>
+							<p>4535:1999 Ambulance Restraint Standard for safety and occupant protection in ambulance vehicles.</p>
 						</div>
 						<div className="p-4 text-center rounded-md text-white category-vehicles" style={{ background: "#18191d" }}>
 							<div>

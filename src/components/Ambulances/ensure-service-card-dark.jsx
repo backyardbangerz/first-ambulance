@@ -90,7 +90,7 @@ export default function EnsureServiceCardDark() {
 			</div>
 
 			<div className="ambulance-card py-10">
-				<h2 className='vehicles-heading text-center'>AMBULANCE</h2>
+				<h2 className='vehicles-heading text-center interior-ambulances-card-title color-primary'>AMBULANCE</h2>
 				<div className='d-flex gap-4 mb-50'>
 					<div>
 						<img style={{ borderRadius: "15px 15px 15px 15px" }} src="https://www.firstambulance.com.my/wp-content/uploads/2023/05/new_ambulance_01-min.jpg" alt="" />

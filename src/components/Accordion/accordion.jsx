@@ -31,7 +31,7 @@ export default function AccordionComponent() {
 	return (
 		<div>
 			<div className='text-center'>
-				<h3 className='color-primary font-weight-bold accordion-top-heading'>STILL ON THE FENCE?</h3>
+				<h3 className='color-primary font-weight-600 accordion-top-heading interior-ambulances-card-title'>STILL ON THE FENCE?</h3>
 				<p className='mt-4 mb-40'>Here are our answers to frequently asked questions by our partners.</p>
 			</div>
 			<div id="accordion">
@@ -47,7 +47,10 @@ export default function AccordionComponent() {
 									aria-controls={`collapse${i}`}
 									onClick={() => toggleAccordion(i)}
 								>
-									<i className={`fas accordion-icon ${openAccordion === i ? 'fa-chevron-up' : 'fa-chevron-right'}`}></i> {item?.title}
+									<div className="flex items-center gap-2">
+										<i className={`fas accordion-icon ${openAccordion === i ? 'fa-chevron-up' : 'fa-chevron-right'}`}></i>
+										<p className={`font-size-18 font-weight-600 ${openAccordion === i ? 'accordion-item-color' : ''}`}>{item?.title}</p>
+									</div>
 								</div>
 							</div>
 
