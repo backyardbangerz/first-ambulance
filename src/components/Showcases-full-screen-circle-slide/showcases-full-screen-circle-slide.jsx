@@ -77,7 +77,7 @@ const ShowcasesFullScreenCircleSlide = () => {
             }}
           >
             {ShowcassesFullScreenData.map((slide) => (
-              <SwiperSlide key={slide.id} className="swiper-slide">
+              <SwiperSlide key={slide.id} className="swiper-slide lazy">
                 <div className="full-width">
                   <div
                     className="bg-img valign"
