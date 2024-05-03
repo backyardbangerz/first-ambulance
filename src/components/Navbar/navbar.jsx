@@ -67,7 +67,7 @@ const Navbar = ({ lr, nr, theme }) => {
                   Ambulance
                 </Link>
                 <Link to={`/project-details2/project-details2-dark/`} className="dropdown-item">
-                  Showcase Parallax
+                  Sample Project
                 </Link>
               </div>
             </li>
