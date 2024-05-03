@@ -1,16 +1,29 @@
 import React from "react";
 import Navbar from "components/Navbar/navbar";
-import IntroWithSlider from "components/Intro-with-slider/intro-with-slider";
-import AboutUs2 from "components/About-us2/about-us2";
-import Services6 from "components/Services6/services6";
-import Numbers from "components/Numbers/numbers";
-import VideoWithTestimonials from "components/Video-with-testimonials/video-with-testimonials";
-import SkillsCircle from "components/Skills-circle/skills-circle";
-import Clients from "components/Clients/clients";
-import Blogs1 from "components/blogs/Blogs1/blogs1";
-import CallToAction from "components/Call-to-action/call-to-action";
-import Footer from "components/Footer/footer";
+// import IntroWithSlider from "components/Intro-with-slider/intro-with-slider";
+// import AboutUs2 from "components/About-us2/about-us2";
+// import Services6 from "components/Services6/services6";
+// import Numbers from "components/Numbers/numbers";
+// import VideoWithTestimonials from "components/Video-with-testimonials/video-with-testimonials";
+// import SkillsCircle from "components/Skills-circle/skills-circle";
+// import Clients from "components/Clients/clients";
+// import Blogs1 from "components/blogs/Blogs1/blogs1";
+// import CallToAction from "components/Call-to-action/call-to-action";
+// import Footer from "components/Footer/footer";
 import DarkTheme from "layouts/Dark";
+
+const IntroWithSlider = React.lazy(() => import("components/Intro-with-slider/intro-with-slider"));
+const AboutUs2 = React.lazy(() => import("components/About-us2/about-us2"));
+const Services6 = React.lazy(() => import("components/Services6/services6"));
+const Numbers = React.lazy(() => import("components/Numbers/numbers"));
+const VideoWithTestimonials = React.lazy(() => import("components/Video-with-testimonials/video-with-testimonials"));
+const SkillsCircle = React.lazy(() => import("components/Skills-circle/skills-circle"));
+const Clients = React.lazy(() => import("components/Clients/clients"));
+const Blogs1 = React.lazy(() => import("components/blogs/Blogs1/blogs1"));
+const CallToAction = React.lazy(() => import("components/Call-to-action/call-to-action"));
+const Footer = React.lazy(() => import("components/Footer/footer"));
+
+
 
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);
@@ -47,18 +60,20 @@ const Homepage1 = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <IntroWithSlider sliderRef={fixedSlider} />
-      <div ref={MainContent} className="main-content">
-        <AboutUs2 />
-        <Services6 />
-        <Numbers />
-        <VideoWithTestimonials />
-        <SkillsCircle theme="dark" />
-        <Clients theme="dark" />
-        <Blogs1 />
-        <CallToAction />
-        <Footer />
-      </div>
+      <React.Suspense fallback={null}>
+        <IntroWithSlider sliderRef={fixedSlider} />
+        <div ref={MainContent} className="main-content">
+          <AboutUs2 />
+          <Services6 />
+          <Numbers />
+          <VideoWithTestimonials />
+          <SkillsCircle theme="dark" />
+          <Clients theme="dark" />
+          <Blogs1 />
+          <CallToAction />
+          <Footer />
+        </div>
+      </React.Suspense>
     </DarkTheme>
   );
 };
