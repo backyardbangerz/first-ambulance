@@ -6,7 +6,8 @@ import ScrollToTop from "components/scrollToTop";
 import LoadingScreen from "components/Loading-Screen";
 
 import "styles/main.css";
-import "styles/preloader.css";  
+import "styles/preloader.css";
+import SectionHeaderDark from "components/Ambulances/section-header-dark";
 
 const DarkTheme = ({ children, useSkin, mobileappstyle }) => {
   React.useEffect(() => {
@@ -41,7 +42,8 @@ const DarkTheme = ({ children, useSkin, mobileappstyle }) => {
     <>
       <Cursor />
       <LoadingScreen />
-      { children }
+      <SectionHeaderDark />
+      {children}
       <ScrollToTop />
 
       <Script src="/js/wowInit.js"></Script>

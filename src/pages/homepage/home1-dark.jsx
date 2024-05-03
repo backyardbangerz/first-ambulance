@@ -12,6 +12,7 @@ import Blogs1 from "components/blogs/Blogs1/blogs1";
 import CallToAction from "components/Call-to-action/call-to-action";
 import Footer from "components/Footer/footer";
 import DarkTheme from "layouts/Dark";
+import SectionHeaderDark from "components/Ambulances/section-header-dark";
 
 const Homepage1 = () => {
   const fixedSlider = React.useRef(null);

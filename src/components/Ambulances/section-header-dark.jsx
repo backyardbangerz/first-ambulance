@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SectionHeaderDark() {
 	return (
-		<div style={{ marginTop: "80px" }}>
+		<div className='w-100 h-100 position-relative z-99'>
 			<div className='p-2 d-flex justify-content-center align-items-center gap-6' style={{ backgroundColor: "#f6f6f6" }}>
 				<a href="tel:1300 88 1919" style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "center", fontWeight: "600", color: "#383838", fontSize: "18px" }}>
 					<span>
@@ -21,13 +21,6 @@ export default function SectionHeaderDark() {
 					<span>IDD: : <font color="ea0029">+603 7785 1919</font> </span>
 				</a>
 			</div>
-			<section className='ambulance-header position-relative ambulance-header-text'>
-				<svg style={{ height: "14px", right: "25%" }} className='position-absolute top-0' fill='#f6f6f6' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
-					<path class="elementor-shape-fill" d="M350,10L340,0h20L350,10z"></path>
-				</svg>
-				<h2 className='text-center font-weight-bolder text-43'>ONSITE <br /> AMBULANCE</h2>
-			</section>
-
 		</div>
 	)
 }

@@ -1755,6 +1755,9 @@ span:hover {
 
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ new page style ] ====================== */
+.z-99 {
+	z-index: 999;
+}
 .py-90 {
 	padding: 90px 0;
 }
@@ -2100,7 +2103,7 @@ p.accordion-content {
 
 /* ====================== [ Start navbar ] ====================== */
 .navbar {
-	position: absolute;
+	/* position: absolute; */
 	left: 0;
 	top: 0;
 	padding: 0;

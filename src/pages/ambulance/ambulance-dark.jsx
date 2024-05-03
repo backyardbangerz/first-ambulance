@@ -6,13 +6,53 @@ import EnsureVehiclesSectionDark from 'components/Ambulances/ensure-vehicles-sec
 import EquipmentSectionDark from 'components/Ambulances/equipment-section-dark';
 import IframeSectionDark from 'components/Ambulances/iframe-section-dark';
 import OnsiteProjectSectionDark from 'components/Ambulances/onsite-project-section-dark';
-import SectionHeaderDark from 'components/Ambulances/section-header-dark';
 import Footer from 'components/Footer/footer';
 import Navbar from 'components/Navbar/navbar';
 import { Link } from 'gatsby';
 import DarkTheme from 'layouts/Dark';
 import React from 'react'
 import Slider from 'react-slick';
+
+const data = [
+	{
+		id: 1,
+		img: "https://www.firstambulance.com.my/wp-content/uploads/2020/06/equipment-b.jpg",
+		title1: "As an outsource ambulance service supplier, we can equip your vehicle ready to go, including Cardiac Monitoring, Inatrope support, Transport Incubators and High End Ventilators, Trauma and Medical devices.",
+		title2: "With decades of experience listening to the needs of private hospital partners we have managed to model a fully adequate range of services. We can provide the level of care they intend to provide and the terrain on which they intend to deploy.",
+	}
+]
+
+const transportationSection = [
+	{
+		id: 1,
+		title: "TRANSPORTATION OF THE CRITICALLY ILL PATIENTS",
+		desc1: "Inter-hospital transfers of critically ill patients from the Intensive Care Unit (ICU), High Dependency Unit (HDU) and Neonate Intensive Care Unit (NICU) remains the core focus of our service. Each transfer is managed depending on the nature of the underlying illness, co-morbidity, level of depencency and risk of deterioration during transfer. Our approach to the safe transfer of the critically ill is that the standard of care and monitoring during the transfer should be at least as good, if not better, than that of the referring hospital or base unit.",
+		desc2: "At First Ambulance, we have a dedicated team of experienced Registered Nurses and Medical Assistant as part of the crew to undertake this area of specialised transport. Their knowledge, experience and training ensure clinical safety at every stage of the transfer.",
+
+	}
+]
+
+const transportationSectionImg = [
+	{
+		id: 1,
+		img: "https://www.firstambulance.com.my/wp-content/uploads/2020/06/ambulance-transportation.jpg",
+	}
+]
+
+const payParAmbulance = [
+	{
+		id: 1,
+		title: "PAY PER USE AMBULANCE SERVICE AND WHEELCHAIR VEHICLES",
+		desc: "First Ambulance emergency medical services are accessible to the public across the country. Our ambulances respond to a wide range of emergencies, from people who are critically ill, women in labour, to accident victims, or even for regular appointments using our wheelchair MPVs. Contact our hotline at 1300 88 1919 and ask for assistance to get premium service throughout Malaysia and are confident that we will contribute value to your operations through our fully integrated turn key solution whilst at the same time offering the strength of our company. Our safety track record is second to none."
+	}
+]
+
+const payParAmbulanceImg = [
+	{
+		id: 1,
+		img: "https://www.firstambulance.com.my/wp-content/uploads/2020/06/Pay-per-use-ambulance-b.jpg",
+	}
+]
 
 function AmbulanceDark() {
 	const fixedSlider = React.useRef(null);
@@ -57,8 +97,9 @@ function AmbulanceDark() {
 	return (
 		<DarkTheme>
 			<Navbar nr={navbarRef} lr={logoRef} />
-			{/* <PageHeader title="ONSITE AMBULANCE." /> */}
-			<SectionHeaderDark />
+			<section className='ambulance-header position-relative ambulance-header-text'>
+				<h2 className='text-center font-weight-bolder text-43'>ONSITE <br /> AMBULANCE</h2>
+			</section>
 			<IframeSectionDark />
 			<BlockquoteSectionDark />
 			<OnsiteProjectSectionDark />
@@ -66,17 +107,30 @@ function AmbulanceDark() {
 				<div className="container equipment-section ">
 					<h2 className="section-heading color-primary interior-ambulances-card-title">OUR EQUIPMENTS</h2>
 					<div className="row">
-						<div className="col-lg-6 col-md-12">
-							<img src='https://www.firstambulance.com.my/wp-content/uploads/2020/06/equipment-b.jpg' alt='equipment' style={{ borderRadius: "10px" }} />
-						</div>
-						<div className="col-lg-6 col-md-12">
-							<p className='onsite-ambulance-text'>
-								As an outsource ambulance service supplier, we can equip your vehicle ready to go, including Cardiac Monitoring, Inatrope support, Transport Incubators and High End Ventilators, Trauma and Medical devices.
-								<br />
-								<br />
-								With decades of experience listening to the needs of private hospital partners we have managed to model a fully adequate range of services. We can provide the level of care they intend to provide and the terrain on which they intend to deploy.
-							</p>
-						</div>
+						{
+							data?.map((item, index) => (
+								<>
+									<div key={index} className="col-lg-6 col-md-12 wow fadeInLeft"
+										data-wow-delay={`${item?.id === 1
+											? ".5"
+											: feature.id === 3
+												? ".9"
+												: "1.1"
+											}s`}>
+										<img src='https://www.firstambulance.com.my/wp-content/uploads/2020/06/equipment-b.jpg' alt='equipment' style={{ borderRadius: "10px" }} />
+									</div>
+									<div className="col-lg-6 col-md-12 wow fadeInLeft">
+										<p className='onsite-ambulance-text'>
+											As an outsource ambulance service supplier, we can equip your vehicle ready to go, including Cardiac Monitoring, Inatrope support, Transport Incubators and High End Ventilators, Trauma and Medical devices.
+											<br />
+											<br />
+											With decades of experience listening to the needs of private hospital partners we have managed to model a fully adequate range of services. We can provide the level of care they intend to provide and the terrain on which they intend to deploy.
+										</p>
+									</div>
+
+								</>
+							))
+						}
 					</div>
 
 					<div className='py-10'>
@@ -90,35 +144,65 @@ function AmbulanceDark() {
 			{/* AMBULANCE INTERIOR */}
 			<AmbulanceInteriorSectionDark />
 
+
 			<section className='bg-dark'>
 				<div className="container py-10">
 					<div className="row">
-						<div className="col-lg-6 col-md-12 mb-50">
-							<div>
-								<p className='color-primary interior-ambulances-card-title'>TRANSPORTATION OF THE CRITICALLY ILL PATIENTS</p>
-								<p className='mt-4 letter-spacing-1'>
-									Inter-hospital transfers of critically ill patients from the Intensive Care Unit (ICU), High Dependency Unit (HDU) and Neonate Intensive Care Unit (NICU) remains the core focus of our service. Each transfer is managed depending on the nature of the underlying illness, co-morbidity, level of depencency and risk of deterioration during transfer. Our approach to the safe transfer of the critically ill is that the standard of care and monitoring during the transfer should be at least as good, if not better, than that of the referring hospital or base unit.
-									<br /><br />
-									At First Ambulance, we have a dedicated team of experienced Registered Nurses and Medical Assistant as part of the crew to undertake this area of specialised transport. Their knowledge, experience and training ensure clinical safety at every stage of the transfer.
-								</p>
-							</div>
-						</div>
-						<div className="col-lg-6 col-md-12 mb-50">
-							<img className='img-fluid rounded-md' src="https://www.firstambulance.com.my/wp-content/uploads/2020/07/transportation-of-critically-ill-b.jpg" alt="" />
-						</div>
+						{
+							transportationSection?.map((item, index) => (
+								<div key={index} className="col-lg-6 col-md-12 mb-50 wow fadeInLeft" data-wow-delay={`${item.id === 1
+									? ".5"
+									: "1.1"
+									}s`}>
+									<div>
+										<p className='color-primary interior-ambulances-card-title'>{item?.title}</p>
+										<p className='mt-4 letter-spacing-1'>
+											{item?.desc1}
+											<br /><br />
+											{item?.desc2}
+										</p>
+									</div>
+								</div>
+							))
+						}
+						{
+							transportationSectionImg?.map((item, index) => (
+								<div key={index} className="col-lg-6 col-md-12 mb-50 wow fadeInLeft" data-wow-delay={`${item.id === 1
+									? ".5"
+									: "1.1"
+									}s`}>
+									<img className='img-fluid rounded-md' src="https://www.firstambulance.com.my/wp-content/uploads/2020/07/transportation-of-critically-ill-b.jpg" alt="" />
+								</div>
+							))
+						}
 
-						<div className="col-lg-6 col-md-12 mt-40 mb-50">
-							<img className='img-fluid rounded-md' src="https://www.firstambulance.com.my/wp-content/uploads/2020/06/Pay-per-use-ambulance-b.jpg" alt="" />
-						</div>
-
-						<div className="col-lg-6 col-md-12 mt-40 mb-50">
-							<div>
-								<p className='color-primary interior-ambulances-card-title'>PAY PER USE AMBULANCE SERVICE AND WHEELCHAIR VEHICLES</p>
-								<p className='mt-4'>
-									First Ambulance emergency medical services are accessible to the public across the country. Our ambulances respond to a wide range of emergencies, from people who are critically ill, women in labour, to accident victims, or even for regular appointments using our wheelchair MPVs. Contact our hotline at 1300 88 1919 and ask for assistance to get premium service throughout Malaysia and are confident that we will contribute value to your operations through our fully integrated turn key solution whilst at the same time offering the strength of our company. Our safety track record is second to none.
-								</p>
-							</div>
-						</div>
+						{
+							payParAmbulanceImg?.map((item, index) => (
+								<div key={index} className="col-lg-6 col-md-12 mt-40 mb-50 wow fadeInRight" data-wow-delay={`${item.id === 1
+									? ".5"
+									: "1.1"
+									}s`}>
+									<img className='img-fluid rounded-md' src={item?.img} alt="" />
+								</div>
+							))
+						}
+						{
+							payParAmbulance?.map((item, index) => (
+								<div key={index} className="col-lg-6 col-md-12 mt-40 mb-50 wow fadeInRight"
+									data-wow-delay={`${item.id === 1
+										? ".5"
+										: "1.1"
+										}s`}
+								>
+									<div>
+										<p className='color-primary interior-ambulances-card-title'>{item?.title}</p>
+										<p className='mt-4'>
+											{item?.desc}
+										</p>
+									</div>
+								</div>
+							))
+						}
 
 					</div>
 				</div>

@@ -1,3 +1,4 @@
+import Split from 'components/Split'
 import React from 'react'
 
 const data = [
@@ -75,12 +76,25 @@ export default function OnsiteProjectSectionDark() {
 								<img src="https://www.firstambulance.com.my/wp-content/uploads/2020/06/Onsite-ambulance-services-b.jpg" alt="ambulance" style={{ borderRadius: "10px" }} />
 							</div>
 							<div className="col-lg-6 col-md-12">
-								<p className='onsite-ambulance-text'>
+								<div className="text">
+									<Split>
+										<p
+											className="onsite-ambulance-text wow txt mb-10 words chars splitting"
+											data-splitting
+										>
+											Using highly qualified, multi-disciplinarily personnel and custom designed, fully equipped ambulances, First Ambulance provides emergency medical support and services to public and private healthcare providers on a retainer basis throughout the year and are available 24/7 on call. Our strong legacy has helped us build a strong relationship with several leading healthcare institutions in the country.
+										</p>
+										<p className="wow txt words chars splitting" data-splitting>
+											First ambulance ensures that all vehicles are built within the CEN Standards. We own and operate the largest private ambulance fleet in Malaysia and comply with the Private Healthcare Facilities and Services Regulations 2006.
+										</p>
+									</Split>
+								</div>
+								{/* <p className='onsite-ambulance-text'>
 									Using highly qualified, multi-disciplinarily personnel and custom designed, fully equipped ambulances, First Ambulance provides emergency medical support and services to public and private healthcare providers on a retainer basis throughout the year and are available 24/7 on call. Our strong legacy has helped us build a strong relationship with several leading healthcare institutions in the country.
 									<br />
 									<br />
 									First ambulance ensures that all vehicles are built within the CEN Standards. We own and operate the largest private ambulance fleet in Malaysia and comply with the Private Healthcare Facilities and Services Regulations 2006.
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
@@ -93,7 +107,16 @@ export default function OnsiteProjectSectionDark() {
 						<div className="row">
 							{
 								data.map((item, i) => (
-									<div key={i} className="col-lg-4 col-md-12 pb-50 gap-10 p-10px">
+
+									<div key={i} className="col-lg-4 col-md-12 pb-50 gap-10 p-10px wow fadeInLeft"
+										data-wow-delay={`${item.id === 1
+												? ".5"
+												: item.id === 2
+													? ".7"
+													: item.id === 3
+														? ".9"
+														: "1.1"
+											}s`}>
 										<img className='mb-20' style={{ borderRadius: "10px" }} src={item.img} alt='onsite project' />
 										<p className="img-bottom-text text-center">{item.title}</p>
 									</div>

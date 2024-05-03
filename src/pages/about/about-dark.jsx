@@ -9,6 +9,7 @@ import AboutIntro from "components/About-intro";
 import Team from "components/Team/team";
 import MinimalArea from "components/Minimal-Area/minimal-area";
 import DarkTheme from "layouts/Dark";
+import SectionHeaderDark from "components/Ambulances/section-header-dark";
 
 const About = () => {
   const navbarRef = React.useRef(null);
