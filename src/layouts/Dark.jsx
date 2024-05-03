@@ -3,7 +3,6 @@ import { Script } from "gatsby";
 
 import Cursor from "components/cursor";
 import ScrollToTop from "components/scrollToTop";
-import LoadingScreen from "components/Loading-Screen";
 
 import "styles/main.css";
 import "styles/preloader.css";

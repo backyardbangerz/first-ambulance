@@ -1,15 +1,5 @@
 import React from "react";
 import Navbar from "components/Navbar/navbar";
-// import IntroWithSlider from "components/Intro-with-slider/intro-with-slider";
-// import AboutUs2 from "components/About-us2/about-us2";
-// import Services6 from "components/Services6/services6";
-// import Numbers from "components/Numbers/numbers";
-// import VideoWithTestimonials from "components/Video-with-testimonials/video-with-testimonials";
-// import SkillsCircle from "components/Skills-circle/skills-circle";
-// import Clients from "components/Clients/clients";
-// import Blogs1 from "components/blogs/Blogs1/blogs1";
-// import CallToAction from "components/Call-to-action/call-to-action";
-// import Footer from "components/Footer/footer";
 import DarkTheme from "layouts/Dark";
 
 const IntroWithSlider = React.lazy(() => import("components/Intro-with-slider/intro-with-slider"));
