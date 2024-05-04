@@ -40,7 +40,7 @@ const DarkTheme = ({ children, useSkin, mobileappstyle }) => {
   return (
     <>
       <Cursor />
-      {/* <LoadingScreen /> */}
+      <LoadingScreen />
       <SectionHeaderDark />
       {children}
       <ScrollToTop />
