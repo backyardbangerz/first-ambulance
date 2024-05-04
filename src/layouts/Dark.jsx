@@ -7,6 +7,7 @@ import ScrollToTop from "components/scrollToTop";
 import "styles/main.css";
 import "styles/preloader.css";
 import SectionHeaderDark from "components/Ambulances/section-header-dark";
+import LoadingScreen from "components/Loading-Screen";
 
 const DarkTheme = ({ children, useSkin, mobileappstyle }) => {
   React.useEffect(() => {
