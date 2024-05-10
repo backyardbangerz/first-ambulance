@@ -52,6 +52,24 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
 
+            <li className="nav-item" onClick={handleDropdown}>
+              <Link to="/binder/binder-dark"
+                className="nav-link ">
+                Binder
+              </Link>
+              {/* <div className="dropdown-menu">
+                <Link to={"/press/press-dark"} className="dropdown-item">
+                  Press
+                </Link>
+                <Link to={"/binder/career-dark"} className="dropdown-item">
+                  Career
+                </Link>
+                <Link to={`/binder/contact-dark/`} className="dropdown-item">
+                  Contact
+                </Link>
+              </div> */}
+            </li>
+
             <li className="nav-item dropdown" onClick={handleDropdown}>
               <Link to="/showcase/showcase-dark"
                 className="nav-link dropdown-toggle"
