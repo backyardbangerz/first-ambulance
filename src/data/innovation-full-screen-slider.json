@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": { "first": "Nexus", "second": "Operation Centre" },
+		"image": "/img/portfolio/full/004.jpg",
+		"sub": "Design",
+		"customLink": "/innovation/nexus-operations-centre",
+		"exploreMoreLink": "/innovation/nexus-operations-centre"
+	},
+	{
+		"id": 2,
+		"title": { "first": "Intergrated Turnkey", "second": "Innovations" },
+		"image": "/img/portfolio/full/005.jpg",
+		"sub": "Design",
+		"customLink": "/innovation/intergrated-turnkey-innovations",
+		"exploreMoreLink": "innovation/intergrated-turnkey-innovations"
+	},
+	{
+		"id": 3,
+		"title": { "first": "Eco-Focused", "second": "Initiatives" },
+		"image": "/img/portfolio/full/006.jpg",
+		"sub": "Design",
+		"customLink": "/innovation/eco-focused-initiatives",
+		"exploreMoreLink": "/innovation/eco-focused-initiatives"
+	}
+]

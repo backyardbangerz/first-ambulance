@@ -4,6 +4,7 @@ import appData from "data/app.json";
 import { handleDropdown, handleMobileDropdown } from "common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
+
   return (
     <nav
       ref={nr}
@@ -40,34 +41,37 @@ const Navbar = ({ lr, nr, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
+            <li className="nav-item dropdown">
+              <Link to="/" className="nav-link dropdown-toggle" data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false">
                 Home
               </Link>
+
+              <div className="dropdown-menu">
+                <Link to={"/innovation/innovation-dark"} className="dropdown-item">
+                  Innovation
+                </Link>
+                <Link to={`/responsibility/responsibility-dark/`} className="dropdown-item">
+                  Responsibility
+                </Link>
+                <Link to={`/careers/careers-dark/`} className="dropdown-item">
+                  Careers
+                </Link>
+                <Link to={`/press/press-dark/`} className="dropdown-item">
+                  Press
+                </Link>
+                <Link to={`/contact/contact-dark/`} className="dropdown-item">
+                  Contact
+                </Link>
+              </div>
             </li>
 
             <li className="nav-item">
               <Link to={`/about/about-dark`} className="nav-link">
                 About
               </Link>
-            </li>
-
-            <li className="nav-item" onClick={handleDropdown}>
-              <Link to="/binder/binder-dark"
-                className="nav-link ">
-                Binder
-              </Link>
-              {/* <div className="dropdown-menu">
-                <Link to={"/press/press-dark"} className="dropdown-item">
-                  Press
-                </Link>
-                <Link to={"/binder/career-dark"} className="dropdown-item">
-                  Career
-                </Link>
-                <Link to={`/binder/contact-dark/`} className="dropdown-item">
-                  Contact
-                </Link>
-              </div> */}
             </li>
 
             <li className="nav-item dropdown" onClick={handleDropdown}>
@@ -104,6 +108,8 @@ const Navbar = ({ lr, nr, theme }) => {
           </ul>
         </div>
       </div>
+
+
     </nav>
   );
 };

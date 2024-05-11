@@ -9,7 +9,6 @@ import AboutIntro from "components/About-intro";
 import Team from "components/Team/team";
 import MinimalArea from "components/Minimal-Area/minimal-area";
 import DarkTheme from "layouts/Dark";
-import SectionHeaderDark from "components/Ambulances/section-header-dark";
 
 const About = () => {
   const navbarRef = React.useRef(null);
@@ -35,7 +34,7 @@ const About = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} from="about-dark" />
-      <PagesHeader />
+      <PagesHeader title="Welcome to the Future of Ambulance Services." img="/img/slid/about2.jpg" />
       <AboutIntro />
       <Services style="4item" />
       <Team />

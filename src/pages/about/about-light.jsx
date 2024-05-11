@@ -37,7 +37,7 @@ const About = () => {
   return (
     <LightTheme>
       <Navbar nr={navbarRef} lr={logoRef} theme="themeL" />
-      <PagesHeader />
+      <PagesHeader title="Welcome to the Future of Ambulance Services." img="/img/slid/about2.jpg" />
       <AboutIntro />
       <Services style="4item" />
       <VideoWithTestimonials />

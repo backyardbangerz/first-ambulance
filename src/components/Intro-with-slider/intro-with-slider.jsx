@@ -35,45 +35,14 @@ const IntroWithSlider = ({ sliderRef }) => {
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper
-            speed={1000}
+            speed={500}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
             parallax={true}
-            navigation={{
-              prevEl: navigationPrevRef.current,
-              nextEl: navigationNextRef.current,
-            }}
-            pagination={{
-              type: "fraction",
-              clickable: true,
-              el: paginationRef.current,
-            }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = navigationPrevRef.current;
-              swiper.params.navigation.nextEl = navigationNextRef.current;
-              swiper.params.pagination.el = paginationRef.current;
-            }}
-            onSwiper={(swiper) => {
-              setTimeout(() => {
-                for (var i = 0; i < swiper.slides.length; i++) {
-                  swiper.slides[i].childNodes[0].setAttribute(
-                    "data-swiper-parallax",
-                    0.75 * swiper.width
-                  );
-                }
 
-                swiper.params.navigation.prevEl = navigationPrevRef.current;
-                swiper.params.navigation.nextEl = navigationNextRef.current;
-
-                swiper.params.pagination.el = paginationRef.current;
-
-                swiper.navigation.destroy();
-                swiper.navigation.init();
-                swiper.navigation.update();
-
-                swiper.pagination.destroy();
-                swiper.pagination.init();
-                swiper.pagination.update();
-              });
-            }}
             className="swiper-wrapper"
             slidesPerView={1}
           >

@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": { "first": "Team Wellbeing", "second": "Initiatives" },
+		"image": "/img/portfolio/full/001.jpg",
+		"sub": "Design",
+		"customLink": "/responsibility/team-wellbeing-initiatives",
+		"exploreMoreLink": "/responsibility/team-wellbeing-initiatives"
+	},
+	{
+		"id": 2,
+		"title": { "first": "Community Impact", "second": "Programs" },
+		"image": "/img/portfolio/full/002.jpg",
+		"sub": "Design",
+		"customLink": "/responsibility/community-impact-programs",
+		"exploreMoreLink": "/responsibility/community-impact-programs"
+	},
+	{
+		"id": 3,
+		"title": { "first": "Making Vehicles", "second": "Special" },
+		"image": "/img/portfolio/full/003.jpg",
+		"sub": "Design",
+		"customLink": "/responsibility/making-vehicles-special",
+		"exploreMoreLink": "/responsibility/making-vehicles-special"
+	}
+]

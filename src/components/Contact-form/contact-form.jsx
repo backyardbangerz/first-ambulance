@@ -61,6 +61,14 @@ const ContactForm = () => {
                       </div>
                       <div className="form-group">
                         <Field
+                          id="form_name"
+                          type="number"
+                          name="mobile"
+                          placeholder="Mobile Number"
+                        />
+                      </div>
+                      <div className="form-group">
+                        <Field
                           validate={validateEmail}
                           id="form_email"
                           type="email"

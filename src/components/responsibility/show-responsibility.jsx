@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Parallax, Mousewheel } from "swiper";
 import removeSlashFromPagination from "common/removeSlashpagination";
-import ShowcassesFullScreenData from "data/innovation-full-screen-slider.json";
+import ShowcassesFullScreenData from "data/responsibility-full-screen-slider.json";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,7 +12,7 @@ import "swiper/css/mousewheel";
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
-const ShowInnovation = () => {
+const ShowResponsibility = () => {
 	const [load, setLoad] = React.useState(true);
 	const navigationPrevRef = React.useRef(null);
 	const navigationNextRef = React.useRef(null);
@@ -147,4 +147,4 @@ const ShowInnovation = () => {
 	);
 };
 
-export default ShowInnovation;
+export default ShowResponsibility;
