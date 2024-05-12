@@ -74,35 +74,63 @@ function CareersDark() {
 						<h2>Careers at First-Ambulance</h2>
 						<hr className='mt-2  mb-3 bg-primary-color' />
 						<p className='my-4 text-xl' style={{ fontSize: "22px", lineHeight: "1.5" }}>
-							We are looking for talented people seeking a challenging career opportunity with a world leader in public safety.</p>
+							We are looking for talented people seeking a challenging career opportunity with a world leader in public safety.
+						</p>
 						<ul>
 							<li>
-								{"	>"} Build a career and be rewarded for your talents.</li>
+								{"	> Build a career and be rewarded for your talents."} </li>
 							<li>
-								{"	>"} Flexible schedule</li>
+								{"	> Flexible schedule"}</li>
 							<li>
-								{"	>"} Work-family balance</li>
+								{"	> Work-family balance"}</li>
 							<li>
-								{"	>"} Very competitive salary</li>
+								{"	> Very competitive salary"}</li>
 							<li>
-								{"	>"} RRSP (up to 5%)</li>
+								{"	> RRSP (up to 5%)"}</li>
 							<li>
-								{"	>"} Parking / Bus paid</li>
+								{"	> Parking / Bus paid"}</li>
 							<li>
-								{"	>"} Gym paid</li>
+								{"	> Gym paid"}</li>
 							<li>
-								{"	>"} Dynamic social club</li>
+								{"	> Dynamic social club"}</li>
 							<li>
-								{"	>"} Several other incentives</li>
+								{"	> Several other incentives"}</li>
 						</ul>
 						<p>
-							<strong>At Emergensys Solutions, we enable public safety agencies throughout the world to better serve their communities!</strong></p>
-						<p>
-
+							<strong>At Emergensys Solutions, we enable public safety agencies throughout the world to better serve their communities!</strong>
 						</p>
-					</div>
 
+					</div>
 				</div>
+			</div>
+
+			<div className="bg-dark py-40">
+				<div className="container">
+					<h3 className="color-font">CURRENT OPENINGS</h3>
+					{/* job box */}
+					<div className="job-box d-md-flex align-items-center justify-content-between mb-30 border rounded px-4 mt-4">
+						<div className="job-left my-4 d-md-flex align-items-center flex-wrap">
+							<div className="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">
+								FD
+							</div>
+							<div className="job-content">
+								<h5 className="text-center text-md-left color-font">Front End Developer</h5>
+								<ul className="d-md-flex flex-wrap text-capitalize ff-open-sans">
+									<li className="mr-md-4 text-info">
+										<i className="fa fa-map-marker color-font mr-1"></i> Selangor
+									</li>
+									<li className="mr-md-4 text-info">
+										<i className="fa fa-clock mr-1"></i> Full Time
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div className="job-right my-4 flex-shrink-0">
+							<a href={`/contact/contact-dark`} className="butn bord curve wow fadeInUp" data-wow-delay=".5s">Apply Now</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 			<Footer />
