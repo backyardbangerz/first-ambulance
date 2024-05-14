@@ -1,29 +1,32 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Parallax, Mousewheel } from "swiper";
+import SwiperCore, { Navigation, Pagination, Parallax, Mousewheel, Autoplay } from "swiper";
 import removeSlashFromPagination from "common/removeSlashpagination";
 import ShowcassesFullScreenData from "data/responsibility-full-screen-slider.json";
+import fadeWhenScroll from "common/fadeWhenScroll";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/mousewheel";
+import "swiper/css/autoplay";
 
-SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
+SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel, Autoplay]);
 
 const ShowResponsibility = () => {
 	const [load, setLoad] = React.useState(true);
+	React.useEffect(() => {
+		fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
+		setTimeout(() => {
+			removeSlashFromPagination();
+			setLoad(false);
+		}, 1000);
+	}, []);
+
 	const navigationPrevRef = React.useRef(null);
 	const navigationNextRef = React.useRef(null);
 	const paginationRef = React.useRef(null);
-
-	React.useEffect(() => {
-		removeSlashFromPagination()
-		setTimeout(() => {
-			setLoad(false);
-		});
-	}, []);
 
 	return (
 		<header className="slider showcase-full">
@@ -31,14 +34,19 @@ const ShowResponsibility = () => {
 				{
 					!load ? (
 						<Swiper
-							speed={1000}
-							mousewheel={true}
+							speed={500}
+							autoplay={{
+								delay: 2500,
+								disableOnInteraction: false,
+							}}
+							loop={true}
 							parallax={true}
 							navigation={{
 								prevEl: navigationPrevRef.current,
 								nextEl: navigationNextRef.current,
 							}}
 							pagination={{
+								type: "fraction",
 								clickable: true,
 								el: paginationRef.current,
 							}}
@@ -115,33 +123,22 @@ const ShowResponsibility = () => {
 					)
 						: null
 				}
-			</div>
-
-			<div className="txt-botm">
-				<div
-					ref={navigationNextRef}
-					className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
-				>
-					<div>
-						<span>Next Slide</span>
-					</div>
-					<div>
+				<div className="setone setwo">
+					<div
+						ref={navigationNextRef}
+						className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
+					>
 						<i className="fas fa-chevron-right"></i>
 					</div>
-				</div>
-				<div
-					ref={navigationPrevRef}
-					className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
-				>
-					<div>
+					<div
+						ref={navigationPrevRef}
+						className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
+					>
 						<i className="fas fa-chevron-left"></i>
 					</div>
-					<div>
-						<span>Prev Slide</span>
-					</div>
 				</div>
+				<div ref={paginationRef} className="swiper-pagination top botm"></div>
 
-				<div className="swiper-pagination dots" ref={paginationRef}></div>
 			</div>
 		</header>
 	);

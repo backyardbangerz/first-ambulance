@@ -2,16 +2,18 @@ import React from "react";
 import { Link } from "gatsby";
 import introData from "data/sections/intro.json";
 import { Swiper, SwiperSlide } from "swiper/react";
+import removeSlashFromPagination from "common/removeSlashpagination";
+import fadeWhenScroll from "common/fadeWhenScroll";
 
-import SwiperCore, { Navigation, Pagination, Parallax } from "swiper";
+import SwiperCore, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import removeSlashFromPagination from "common/removeSlashpagination";
-import fadeWhenScroll from "common/fadeWhenScroll";
+import "swiper/css/autoplay";
 
-SwiperCore.use([Navigation, Pagination, Parallax]);
+
+SwiperCore.use([Navigation, Pagination, Parallax, Autoplay]);
 
 const IntroWithSlider = ({ sliderRef }) => {
   const [load, setLoad] = React.useState(true);
@@ -37,7 +39,7 @@ const IntroWithSlider = ({ sliderRef }) => {
           <Swiper
             speed={500}
             autoplay={{
-              delay: 5000,
+              delay: 2500,
               disableOnInteraction: false,
             }}
             loop={true}
