@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Parallax, Mousewheel } from "swiper";
+import SwiperCore, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
 import removeSlashFromPagination from "common/removeSlashpagination";
 import ShowcassesFullScreenData from "data/innovation-full-screen-slider.json";
 import fadeWhenScroll from "common/fadeWhenScroll";
@@ -9,9 +9,9 @@ import fadeWhenScroll from "common/fadeWhenScroll";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/mousewheel";
+import "swiper/css/autoplay";
 
-SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
+SwiperCore.use([Navigation, Pagination, Parallax, Autoplay]);
 
 const ShowInnovation = () => {
 	const [load, setLoad] = React.useState(true);
@@ -26,15 +26,16 @@ const ShowInnovation = () => {
 	const navigationPrevRef = React.useRef(null);
 	const navigationNextRef = React.useRef(null);
 	const paginationRef = React.useRef(null);
+
 	return (
-		<header className="slider showcase-full">
+		<header className="slider slider-prlx fixed-slider showcase-full">
 			<div className="swiper-container parallax-slider">
 				{
 					!load ? (
 						<Swiper
 							speed={500}
 							autoplay={{
-								delay: 5000,
+								delay: 2500,
 								disableOnInteraction: false,
 							}}
 							loop={true}

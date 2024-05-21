@@ -28,6 +28,46 @@ const AboutIntro = () => {
             </div>
           </div>
         </div>
+
+        <div className="row mt-40">
+          <div className="col-lg-3 col-md-4">
+            <div className="htit sm-mb30">
+              <h4>{AboutInfo1Data.title2}</h4>
+            </div>
+          </div>
+          <div className="col-lg-8 offset-lg-1 col-md-8">
+            <div className="text">
+              <Split>
+                <p
+                  className="wow txt mb-10 words chars splitting"
+                  data-splitting
+                >
+                  {AboutInfo1Data.paragraph22}
+                </p>
+              </Split>
+            </div>
+          </div>
+        </div>
+
+        <div className="row mt-40">
+          <div className="col-lg-3 col-md-4">
+            <div className="htit sm-mb30">
+              <h4>{AboutInfo1Data.title3}</h4>
+            </div>
+          </div>
+          <div className="col-lg-8 offset-lg-1 col-md-8">
+            <div className="text">
+              <Split>
+                <p
+                  className="wow txt mb-10 words chars splitting"
+                  data-splitting
+                >
+                  {AboutInfo1Data.paragraph33}
+                </p>
+              </Split>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
