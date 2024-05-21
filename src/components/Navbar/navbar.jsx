@@ -41,67 +41,43 @@ const Navbar = ({ lr, nr, theme }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item dropdown">
-              <Link to="/" className="nav-link dropdown-toggle" data-toggle="dropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
                 Home
               </Link>
-
-              <div className="dropdown-menu">
-                <Link to={"/innovation/innovation-dark"} className="dropdown-item">
-                  Innovation
-                </Link>
-                <Link to={`/responsibility/responsibility-dark/`} className="dropdown-item">
-                  Responsibility
-                </Link>
-                <Link to={`/careers/careers-dark/`} className="dropdown-item">
-                  Careers
-                </Link>
-                <Link to={`/press/press-dark/`} className="dropdown-item">
-                  Press
-                </Link>
-                <Link to={`/contact/contact-dark/`} className="dropdown-item">
-                  Contact
-                </Link>
-              </div>
             </li>
 
             <li className="nav-item">
-              <Link to={`/about/about-dark`} className="nav-link">
-                About
+              <Link to="/about/about-dark" className="nav-link">
+                Company
               </Link>
-            </li>
-
-            <li className="nav-item dropdown" onClick={handleDropdown}>
-              <Link to="/showcase/showcase-dark"
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Works
-              </Link>
-              <div className="dropdown-menu">
-                <Link to={"/ambulance/ambulance-dark"} className="dropdown-item">
-                  Ambulance
-                </Link>
-                <Link to={`/project-details2/project-details2-dark/`} className="dropdown-item">
-                  Sample Project
-                </Link>
-              </div>
             </li>
 
             <li className="nav-item">
-              <Link to={`/blog/blog-dark`} className="nav-link">
+              <Link to={"/innovation/innovation-dark"} className="nav-link">
+                Innovation
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to={`/responsibility/responsibility-dark/`} className="nav-link">
+                Responsibility
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to={`/careers/careers-dark/`} className="nav-link">
+                Careers
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to={`/press/press-dark/`} className="nav-link">
                 Press
               </Link>
             </li>
-
             <li className="nav-item">
-              <Link to={`/contact/contact-dark`} className="nav-link">
+              <Link to={`/contact/contact-dark/`} className="nav-link">
                 Contact
               </Link>
             </li>
