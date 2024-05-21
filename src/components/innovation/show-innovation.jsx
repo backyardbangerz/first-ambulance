@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Parallax, Mousewheel } from "swiper";
 import removeSlashFromPagination from "common/removeSlashpagination";
 import ShowcassesFullScreenData from "data/innovation-full-screen-slider.json";
+import fadeWhenScroll from "common/fadeWhenScroll";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,31 +15,36 @@ SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
 const ShowInnovation = () => {
 	const [load, setLoad] = React.useState(true);
+	React.useEffect(() => {
+		fadeWhenScroll(document.querySelectorAll(".fixed-slider .caption"));
+		setTimeout(() => {
+			removeSlashFromPagination();
+			setLoad(false);
+		}, 1000);
+	}, []);
+
 	const navigationPrevRef = React.useRef(null);
 	const navigationNextRef = React.useRef(null);
 	const paginationRef = React.useRef(null);
-
-	React.useEffect(() => {
-		removeSlashFromPagination()
-		setTimeout(() => {
-			setLoad(false);
-		});
-	}, []);
-
 	return (
 		<header className="slider showcase-full">
 			<div className="swiper-container parallax-slider">
 				{
 					!load ? (
 						<Swiper
-							speed={1000}
-							mousewheel={true}
+							speed={500}
+							autoplay={{
+								delay: 5000,
+								disableOnInteraction: false,
+							}}
+							loop={true}
 							parallax={true}
 							navigation={{
 								prevEl: navigationPrevRef.current,
 								nextEl: navigationNextRef.current,
 							}}
 							pagination={{
+								type: "fraction",
 								clickable: true,
 								el: paginationRef.current,
 							}}
@@ -115,34 +121,24 @@ const ShowInnovation = () => {
 					)
 						: null
 				}
-			</div>
-
-			<div className="txt-botm">
-				<div
-					ref={navigationNextRef}
-					className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
-				>
-					<div>
-						<span>Next Slide</span>
-					</div>
-					<div>
+				<div className="setone setwo">
+					<div
+						ref={navigationNextRef}
+						className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
+					>
 						<i className="fas fa-chevron-right"></i>
 					</div>
-				</div>
-				<div
-					ref={navigationPrevRef}
-					className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
-				>
-					<div>
+					<div
+						ref={navigationPrevRef}
+						className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
+					>
 						<i className="fas fa-chevron-left"></i>
 					</div>
-					<div>
-						<span>Prev Slide</span>
-					</div>
 				</div>
-
-				<div className="swiper-pagination dots" ref={paginationRef}></div>
+				<div ref={paginationRef} className="swiper-pagination top botm"></div>
 			</div>
+
+
 		</header>
 	);
 };
