@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "components/Navbar/navbar";
 import DarkTheme from "layouts/Dark";
-import ShowInnovation from "components/innovation/show-innovation";
+import TopSection from "components/operational/TopSection";
+import Footer from "components/Footer/footer";
 
 const OperationalGovernanceDark = () => {
 	const fixedHeader = React.useRef(null);
@@ -48,7 +49,10 @@ const OperationalGovernanceDark = () => {
 				</div>
 			</div>
 			<Navbar nr={navbarRef} lr={logoRef} />
-			<ShowInnovation />
+			<div className="py-40">
+				<TopSection />
+			</div>
+			<Footer />
 		</DarkTheme>
 	);
 };
@@ -56,7 +60,7 @@ const OperationalGovernanceDark = () => {
 export const Head = () => {
 	return (
 		<>
-			<title>Vie - Innovation</title>
+			<title>Operational Governance | First Ambulance</title>
 		</>
 	)
 }

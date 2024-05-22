@@ -245,10 +245,6 @@ function CareersDark() {
 								<li>
 									{"	> Several other incentives"}</li>
 							</ul>
-							<p>
-								<strong>At Emergensys Solutions, we enable public safety agencies throughout the world to better serve their communities!</strong>
-							</p>
-
 						</div>
 					</div>
 				</div>
@@ -278,7 +274,7 @@ function CareersDark() {
 									</div>
 								</div>
 								<div className="job-right my-4 flex-shrink-0">
-									<a href={`/contact/contact-dark`} className="butn bord curve wow fadeInUp" data-wow-delay=".5s">Apply Now</a>
+									<a href="#applynow" className="butn bord curve wow fadeInUp" data-wow-delay=".5s">Apply Now</a>
 								</div>
 							</div>
 						)
@@ -290,7 +286,7 @@ function CareersDark() {
 			<div className="py-40">
 				<div className="container">
 					{/* online application form */}
-					<div className='mt-40'>
+					<div className='mt-40' id='applynow'>
 						<h2 className='color-font mb-40'>Apply Online</h2>
 
 						<div className="application-form contact">

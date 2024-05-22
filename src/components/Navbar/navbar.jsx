@@ -51,17 +51,19 @@ const Navbar = ({ lr, nr, theme }) => {
               role="button"
               aria-haspopup="true"
               aria-expanded="false">
-              <Link to="/about/about-dark" className="nav-link dropdown-toggle">
+              <li className="nav-link dropdown-toggle">
                 Company
-              </Link>
+              </li>
               <div className="dropdown-menu">
-                <Link to="/about/about-dark" className="dropdown-item">
+                <Link to="/strategic-direction/strategic-direction-dark" className="dropdown-item">
                   Strategic Direction
                 </Link>
                 <Link to="/operational-governance/operational-governance-dark" className="dropdown-item">
                   Operational Governance
                 </Link>
-
+                <Link to="/legacy-values/legacy-values-dark" className="dropdown-item">
+                  Legacy Values
+                </Link>
               </div>
             </li>
 
