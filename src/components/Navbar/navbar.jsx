@@ -51,9 +51,9 @@ const Navbar = ({ lr, nr, theme }) => {
               role="button"
               aria-haspopup="true"
               aria-expanded="false">
-              <li className="nav-link dropdown-toggle">
+              <span className="nav-link dropdown-toggle">
                 Company
-              </li>
+              </span>
               <div className="dropdown-menu">
                 <Link to="/strategic-direction/strategic-direction-dark" className="dropdown-item">
                   Strategic Direction
