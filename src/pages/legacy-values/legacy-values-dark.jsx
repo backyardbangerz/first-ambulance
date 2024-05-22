@@ -43,7 +43,6 @@ const LegacyValues = () => {
 							</h1>
 						</div>
 					</div>
-
 				</div>
 				<div className="half sub-bg">
 					<div className="circle-color">

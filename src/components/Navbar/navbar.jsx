@@ -67,7 +67,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </div>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <Link to={"/innovation/innovation-dark"} className="nav-link">
                 Innovation
               </Link>
