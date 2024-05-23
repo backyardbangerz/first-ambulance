@@ -122,17 +122,17 @@ const ContactForm = () => {
                 </h6>
               </div>
               <div className="social mt-50">
-                <a href="#0" className="icon">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/firstambulance/" className="icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#0" className="icon">
-                  <i className="fab fa-twitter"></i>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/firstambulance/" className="icon">
+                  <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#0" className="icon">
-                  <i className="fab fa-pinterest"></i>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@firstambulance5810" className="icon">
+                  <i className="fab fa-youtube"></i>
                 </a>
-                <a href="#0" className="icon">
-                  <i className="fab fa-behance"></i>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/first-ambulance-services" className="icon">
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
