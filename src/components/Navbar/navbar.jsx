@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import appData from "data/app.json";
-import { handleDropdown, handleMobileDropdown } from "common/navbar";
+import { handleMobileDropdown } from "common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
 
@@ -12,7 +12,7 @@ const Navbar = ({ lr, nr, theme }) => {
         }`}
     >
       <div className="container">
-        <Link to="/" className="logo">
+        <Link to="/">
           {theme ? (
             theme === "themeL" ? (
               <img ref={lr} src={appData.darkLogo} alt="logo" />
