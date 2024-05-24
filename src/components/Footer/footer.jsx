@@ -18,8 +18,8 @@ const Footer = ({ hideBGCOLOR }) => {
                   <div className="cont">
                     <h6>Officeal Address</h6>
                     <p>75, Jalan Templer,
-                       Section 6,<br></br> Petaling Jaya, 
-                       46000 <br></br>Selangor, Malaysia.
+                      Section 6,<br></br> Petaling Jaya,
+                      46000 <br></br>Selangor, Malaysia.
                     </p>
                   </div>
                 </li>
@@ -35,11 +35,11 @@ const Footer = ({ hideBGCOLOR }) => {
                   <div className="cont">
                     <h6>Call Us</h6>
                     <Link to="tel:1300881919">
-                     <p>1300 88 1919</p>
+                      <p>1300 88 1919</p>
                     </Link>
                     <h6>IDD</h6>
                     <Link to="tel:+60377851919" >
-                     <p>+603 7785 1919</p>
+                      <p>+603 7785 1919</p>
                     </Link>
                   </div>
                 </li>
@@ -103,19 +103,19 @@ const Footer = ({ hideBGCOLOR }) => {
                 <img src={appData.lightLogo} alt="" />
               </div>
               <div className="social">
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/firstambulance/" className="icon">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#0">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/firstambulance/" className="icon">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#0">
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@firstambulance5810" className="icon">
                   <i className="fab fa-youtube"></i>
                 </a>
-              </div>              
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/first-ambulance-services" className="icon">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
