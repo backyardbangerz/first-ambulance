@@ -2,15 +2,17 @@ import React from "react";
 import { Link } from "gatsby";
 import appData from "data/app.json";
 import { handleMobileDropdown } from "common/navbar";
+import SectionHeaderDark from "components/Ambulances/section-header-dark";
 
 const Navbar = ({ lr, nr, theme }) => {
 
   return (
     <nav
       ref={nr}
-      className={`navbar navbar-expand-lg change ${theme === "themeL" ? "light" : ""
+      className={`navbar flex-col navbar-expand-lg change ${theme === "themeL" ? "light" : ""
         }`}
     >
+      <SectionHeaderDark />
       <div className="container">
         <Link to="/">
           {theme ? (
